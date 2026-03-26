@@ -103,7 +103,9 @@
     <button onclick="nextQuestion()">nächste Aufgabe &gt;</button>
     <select id="stateSelect" onchange="changeState()"></select>
     <br><br>
-    <input type="number" value="1" id="goto" placeholder="Nr." min="1" max="310">
+    <form onsubmit="goToQuestion(); return false;">
+      <input type="number" value="1" id="goto" placeholder="Nr." min="1" max="310">
+    </form>
     <button onclick="goToQuestion()">Gehe zu Aufgabe Nr.</button>
     <button onclick="goHome()">zur Startseite</button>
   </div>
